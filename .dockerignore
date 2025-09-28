@@ -1,0 +1,29 @@
+# Node.js deps
+node_modules
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Next.js build output
+.next
+out
+
+# Test and coverage
+coverage
+
+# Local env (не нужны внутри образа)
+.env.local
+.env.development
+.env.test
+
+# System files
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# Git / IDE
+.git
+.gitignore
+.vscode
+
+ansible
