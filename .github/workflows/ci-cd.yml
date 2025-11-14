@@ -22,7 +22,7 @@ jobs:
         run: echo "image-tag=puck3/freshwave:latest" >> $GITHUB_OUTPUT
 
       - name: Create .env file for Docker
-        run: echo "${{ secrets.ENV_FILE }}" > .env
+        run: echo "${{ vars.ENV_FILE }}" > .env
 
       - name: Build Docker image
         run: docker build -t ${{ steps.tag.outputs.image-tag }} .
