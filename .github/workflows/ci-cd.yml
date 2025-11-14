@@ -87,7 +87,6 @@ jobs:
           ANSIBLE_PORT: ${{ secrets.ANSIBLE_PORT }}
         run: |
           envsubst < inventory/hosts.yml > inventory/hosts.generated.yml
-          cat inventory/hosts.generated.yml
           ansible-galaxy install -r requirements.yml
           ansible-playbook -i inventory/hosts.generated.yml playbook.yml \
             --vault-password-file <(echo "${{ secrets.ANSIBLE_VAULT_PASSWORD }}")

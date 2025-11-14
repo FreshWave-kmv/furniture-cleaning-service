@@ -1,6 +1,6 @@
 ---
 - name: Deploy application
-  hosts: production
+  hosts: stage
   become: true
   roles:
     - docker_ubuntu
