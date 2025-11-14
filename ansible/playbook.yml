@@ -1,0 +1,7 @@
+---
+- name: Deploy application
+  hosts: production
+  become: true
+  roles:
+    - docker_ubuntu
+    - deploy

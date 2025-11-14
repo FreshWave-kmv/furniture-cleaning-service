@@ -1,0 +1,9 @@
+---
+roles:
+  - name: docker_ubuntu
+    src: https://github.com/FreshWave-kmv/ansible-role-docker
+    version: main
+
+  - name: deploy
+    src: https://github.com/FreshWave-kmv/ansible-role-deploy
+    version: main
